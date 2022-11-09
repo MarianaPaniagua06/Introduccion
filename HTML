@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+    <div class="base">
+        <h1>Calculadora Numerica</h1>
+        <div class="input-css">
+            Numero: <input id = "numero" type="text" placeholder="Tu numero" value="">
+        </div>
+        <h2> Ingrese que tipo de numero es:</h2>
+        <div class="buttons">
+            <button type="button" onclick="Decimal()">Decimal</button>
+            <button type="button" onclick="Binary()">Binario</button>
+            <button type="button" onclick="Octal()">Octal</button>
+            <button type="button" onclick="Hexadecimal()">Hexadecimal</button>
+        </div>
+        <h2 id = "result"></h2>
+        <div class="output-text">
+            <div id = "d2" class="output">
+                <h3 id="binatext"></h3>  
+                <span class="number-result" id="Binary"></span>
+            </div>
+            <div id = "d10" class="output">
+                <h3 id="decitext"></h3>  
+                <span class="number-result" id="Decimal"></span>
+            </div>
+            <div id = "d8" class="output">
+                <h3 id="octatext"></h3>  
+                <span class="number-result" id="Octal"></span>
+            </div>
+            <div id = "d16" class="output">
+                <h3 id="hexatext"></h3>  
+                <span class="number-result" id="Hexadecimal"></span>
+            </div>
+        </div>
+        
+        <script src="/js/calcu.js"></script>
+    </div>
+    
+</body>
+</html>
